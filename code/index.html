@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<title>MH2 QR Generator</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <header class="header">
+    <div class="logo">QR</div>
+    <h1>MH2 QR Generator</h1>
+    <p>Create a QR Code from any link instantly</p>
+  </header>
+
+  <main class="app">
+
+    <section class="card">
+
+      <label for="urlInput">Enter URL or Link</label>
+
+      <div class="input-wrap">
+        <input
+          id="urlInput"
+          type="text"
+          autocomplete="off"
+          placeholder="https://example.com"
+          value="https://mh2-hridoy.web.app/"
+        >
+        <button class="clear-btn" id="clearBtn" type="button">×</button>
+      </div>
+
+      <button class="generate" id="generateBtn" type="button">
+        Generate QR Code
+      </button>
+
+      <div class="status" id="status"></div>
+
+      <div class="examples">
+        <div class="examples-title">Quick examples</div>
+
+        <button
+          class="example-btn"
+          type="button"
+          data-url="https://mh2-hridoy.web.app/"
+        >
+          MH2 HRIDOY
+        </button>
+
+        <button
+          class="example-btn"
+          type="button"
+          data-url="https://github.com/mhhridoy7907"
+        >
+          GitHub
+        </button>
+
+        <button
+          class="example-btn"
+          type="button"
+          data-url="https://youtube.com/"
+        >
+          YouTube
+        </button>
+      </div>
+
+      <div class="tip">
+        Tip: Use the complete URL starting with
+        <strong>https://</strong> for the best scanning result.
+      </div>
+
+    </section>
+
+    <section class="card preview">
+
+      <div class="preview-title">QR Code Preview</div>
+
+      <div class="qr-box">
+
+        <canvas id="qrCanvas"></canvas>
+
+        <div class="empty" id="emptyState">
+          Your QR Code<br>
+          will appear here
+        </div>
+
+      </div>
+
+      <div class="url-preview" id="urlPreview"></div>
+
+      <div class="downloads" id="downloads">
+
+        <button class="download-btn jpg" id="downloadJpg" type="button">
+          Download JPG
+        </button>
+
+        <button class="download-btn" id="downloadPng" type="button">
+          Download PNG
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    MH2 HRIDOY · QR Generator
+  </footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
