@@ -36,6 +36,11 @@ Create QR codes from any URL instantly and download them as **PNG or JPG** image
 
 The application also automatically adds `https://` when a URL is entered without a protocol.
 
+
+## 📸 Screenshot
+
+![MH2 QR Generator Demo](code/demo.png)
+
 ## 📁 Project Structure
 
 ```text
