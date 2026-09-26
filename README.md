@@ -40,8 +40,11 @@ The application also automatically adds `https://` when a URL is entered without
 
 ```text
 MH2-QR-Generator/
-│
-├── index.html
+code/
+│    ├── index.html
+│    ├── style.css
+│    └── script.js
+├── LICENSE
 └── README.md
 ```
 
